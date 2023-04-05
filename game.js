@@ -46,6 +46,19 @@ $("h1").text("level " +level)
 nextSequence()
 started = true;
 }});
+$(document).on("touchstart", function() {
+if(!started){
+
+$("h1").text("level " +level)
+
+nextSequence()
+
+started = true;
+
+}
+  // handle touch start event
+
+});
 function checkAnswer(currentlevel){
   if (gamePattern[currentlevel]===userClickedPattern[currentlevel]) {
   if (userClickedPattern.length === gamePattern.length) {
