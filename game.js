@@ -46,7 +46,7 @@ $("h1").text("level " +level)
 nextSequence()
 started = true;
 }});
-$(document).on("touchstart", function() {
+$("body").on("touchstart", function() {
 if(!started){
 
 $("h1").text("level " +level)
